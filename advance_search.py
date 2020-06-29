@@ -61,13 +61,13 @@ class MyWindow:
         self.t1.place(x=220, y=50)
         self.btn1 = Button(win, text='Search')
         self.b1 = Button(win, text='Search', command=self.search)
-        self.b1.place(x=50, y=180)
+        self.b1.place(x=50, y=90)
 
 
         self.lbl5  = Label(win, text="lyrics")
-        self.st1 = ScrolledText(win, height=6);
-        self.lbl5.place(x=40, y=210)
-        self.st1.place(x=40, y=230)
+        self.st1 = ScrolledText(win, height=6)
+        self.lbl5.place(x=40, y=120)
+        self.st1.place(x=40, y=150)
 
         self.lbl6 = Label(win, text="Song Name")
         self.lbl7 = Label(win, text="Artist")
@@ -89,32 +89,32 @@ class MyWindow:
         self.st13 = ScrolledText(win, height=2);
         self.st14 = ScrolledText(win, height=2);
 
-        self.lbl6.place(x=40, y=340)
-        self.st6.place(x=40, y=370)
+        self.lbl6.place(x=40, y=250)
+        self.st6.place(x=40, y=280)
 
-        self.lbl7.place(x=730, y=340)
-        self.st7.place(x=730, y=370)
+        self.lbl7.place(x=730, y=250)
+        self.st7.place(x=730, y=280)
 
-        self.lbl8.place(x=40, y=420)
-        self.st8.place(x=40, y=440)
+        self.lbl8.place(x=40, y=340)
+        self.st8.place(x=40, y=370)
 
-        self.lbl9.place(x=730, y=420)
-        self.st9.place(x=730, y=440)
+        self.lbl9.place(x=730, y=340)
+        self.st9.place(x=730, y=370)
 
-        self.lbl10.place(x=40, y=490)
-        self.st10.place(x=40, y=510)
+        self.lbl10.place(x=40, y=430)
+        self.st10.place(x=40, y=460)
 
-        self.lbl11.place(x=730, y=490)
-        self.st11.place(x=730, y=510)
+        self.lbl11.place(x=730, y=430)
+        self.st11.place(x=730, y=460)
 
-        self.lbl12.place(x=40, y=560)
-        self.st12.place(x=40, y=585)
+        self.lbl12.place(x=40, y=520)
+        self.st12.place(x=40, y=550)
 
-        self.lbl13.place(x=730, y=560)
-        self.st13.place(x=730, y=585)
+        self.lbl13.place(x=730, y=520)
+        self.st13.place(x=730, y=550)
 
-        self.lbl14.place(x=40, y=640)
-        self.st14.place(x=40, y=660)
+        self.lbl14.place(x=40, y=610)
+        self.st14.place(x=40, y=640)
 
 
     def search(self):

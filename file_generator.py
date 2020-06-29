@@ -18,35 +18,35 @@ def generateFiles():
         beat = hit["_source"]['beat']
         musicdir = hit["_source"]['musicDirector']
 
-        f1 = open("song_name.txt", "a", encoding='utf-8')
+        f1 = open("Boost helpers/song_name.txt", "a", encoding='utf-8')
         f1.write(songname + '\n')
         f1.close()
 
-        f2 = open("artist.txt", "a", encoding='utf-8')
+        f2 = open("Boost helpers/artist.txt", "a", encoding='utf-8')
         f2.write(str(artist) + '\n')
         f2.close()
 
-        f3 = open("beat.txt", "a", encoding='utf-8')
+        f3 = open("Boost helpers/beat.txt", "a", encoding='utf-8')
         f3.write(str(beat) + '\n')
         f3.close()
 
-        f4 = open("genre.txt", "a", encoding='utf-8')
+        f4 = open("Boost helpers/genre.txt", "a", encoding='utf-8')
         f4.write(str(genre) + '\n')
         f4.close()
 
-        f5 = open("key.txt", "a", encoding='utf-8')
+        f5 = open("Boost helpers/key.txt", "a", encoding='utf-8')
         f5.write(str(key) + '\n')
         f5.close()
 
-        f6 = open("lyric.txt", "a", encoding='utf-8')
+        f6 = open("Boost helpers/lyric.txt", "a", encoding='utf-8')
         f6.write(str(lyric) + '\n')
         f6.close()
 
-        f7 = open("lyricwriter.txt", "a", encoding='utf-8')
+        f7 = open("Boost helpers/lyricwriter.txt", "a", encoding='utf-8')
         f7.write(str(lyricwriter) + '\n')
         f7.close()
 
-        f8 = open("musicDirectors.txt", "a", encoding='utf-8')
+        f8 = open("Boost helpers/musicDirectors.txt", "a", encoding='utf-8')
         f8.write(str(musicdir) + '\n')
         f8.close()
         # open and read the file after the appending:

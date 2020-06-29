@@ -233,7 +233,7 @@ def isInt(tokenList):
     return intlist
 
 def getLists():
-    filepath = 'artist.txt'
+    filepath = 'Boost helpers/artist.txt'
     with open(filepath, encoding='utf-8-sig') as fp:
         line = fp.readline()
         cnt = 1
@@ -242,7 +242,7 @@ def getLists():
             line = fp.readline()
             cnt += 1
 
-    filepath = 'musicDirectors.txt'
+    filepath = 'Boost helpers/musicDirectors.txt'
     with open(filepath, encoding='utf-8-sig') as fp:
         line = fp.readline()
         cnt = 1
@@ -251,7 +251,7 @@ def getLists():
             line = fp.readline()
             cnt += 1
 
-    filepath = 'lyricwriter.txt'
+    filepath = 'Boost helpers/lyricwriter.txt'
     with open(filepath, encoding='utf-8-sig') as fp:
         line = fp.readline()
         cnt = 1
@@ -260,7 +260,7 @@ def getLists():
             line = fp.readline()
             cnt += 1
 
-    filepath = 'beat.txt'
+    filepath = 'Boost helpers/beat.txt'
     with open(filepath, encoding='utf-8-sig') as fp:
         line = fp.readline()
         cnt = 1
@@ -269,7 +269,7 @@ def getLists():
             line = fp.readline()
             cnt += 1
 
-    filepath = 'song_name.txt'
+    filepath = 'Boost helpers/song_name.txt'
     with open(filepath, encoding='utf-8-sig') as fp:
         line = fp.readline()
         cnt = 1
@@ -278,7 +278,7 @@ def getLists():
             line = fp.readline()
             cnt += 1
 
-    filepath = 'genreBoost.txt'
+    filepath = 'Boost helpers/genreBoost.txt'
     with open(filepath, encoding='utf-8-sig') as fp:
         line = fp.readline()
         cnt = 1

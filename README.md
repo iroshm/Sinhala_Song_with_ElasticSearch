@@ -8,6 +8,7 @@ Project to search songs in sinhala using Elasticsearch and python
 2. Install required packages
       a.) elasticsearch
       b.) tkinter
+      c.) kibana
 
 ## Run
 

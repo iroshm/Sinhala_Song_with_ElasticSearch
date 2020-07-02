@@ -326,12 +326,23 @@ def searchQuery(songName,artistNames,lwname,rankNum,userInput):
     for i in tokenList:
         newQuery = newQuery + '*' + i + "*" + ' '
 
-    res = es.search(index="sinhala_song_tokenizer", body={"size": 20, "query": {"query_string": {"query": newQuery,
+    res = es.search(index="sinhala_sindu_tokenizer", body={"size": 20, "query": {"query_string": {"query": newQuery,
                                                                                       "fields": ["songName", "artist",
                                                                                                  "genre", "lyricWriter",
                                                                                                  "musicDirector", "key",
-                                                                                                 "beat", "lyric"]}}})
-    print("Got %d Hits:" % res['hits']['total']['value'])
+                                                                                                 "beat", "lyric"],
+                                                                                                 "fuzziness": "AUTO"}},
+                                                          "aggs": {
+                                                              "genre filter": {
+                                                                  "terms": {"field": "genre","size": 10
+                                                                            }
+                                                              },
+                                                              "artist filter": {
+                                                                  "terms": {
+                                                                      "field": "artist",
+                                                                      "size": 30
+                                                                  }}}})
+    print("Got %d Hitss:" % res['hits']['total']['value'])
 
 
 ###########################################################################
